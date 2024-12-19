@@ -37,7 +37,7 @@ while true; do
 
         done
 
-        output="${normal_color}working on${highlight_color} $current_session    $window_string"
+        output="${normal_color}session${highlight_color} $current_session    $window_string"
         # echo "$(tmux display-message -p '#W')"
         echo $output
     else
