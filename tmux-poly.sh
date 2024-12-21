@@ -17,7 +17,7 @@ while true; do
 
 
     # Check if the window title contains "tmux"
-    if [[ "$window_title" == "tmux" ]] || [[ "$window_title" == "tmux attach" ]] || [[ "$window_title" == "tmux a" ]]; then
+    if [[ "$window_title" == "Alacritty" ]] || [[ "$window_title" == "tmux" ]] || [[ "$window_title" == "tmux attach" ]] || [[ "$window_title" == "tmux a" ]]; then
         # If the window title contains "tmux", display the current tmux window name
         current_session=$(tmux display-message -p '#S')
 
@@ -45,5 +45,5 @@ while true; do
     fi
 
     # Wait for 1 second before the next iteration
-    sleep 1
+    sleep 0.5
 done
